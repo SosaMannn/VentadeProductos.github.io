@@ -1,28 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>RunPro Store</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+<img src="img/logo.png" alt="Logo RunPro" width="120">
+<h1>RunPro Store</h1>
+<p>Tienda online de running</p>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="#">🛒 Carrito (<span id="contador">0</span>)</a>
+</nav>
+</header>
+
+<main>
 <section>
-<h2>Nuestros Productos</h2>
-
-<div class="productos-grid">
-
-<div class="producto">
-<img src="img/zapatilla1.jpg">
-<h3>RunPro X1</h3>
-<p class="precio">120€</p>
-<button class="boton">Comprar</button>
-</div>
-
-<div class="producto">
-<img src="img/zapatilla1.jpg">
-<h3>RunPro Elite</h3>
-<p class="precio">150€</p>
-<button class="boton">Comprar</button>
-</div>
-
-<div class="producto">
-<img src="img/zapatilla1.jpg">
-<h3>RunPro Speed</h3>
-<p class="precio">135€</p>
-<button class="boton">Comprar</button>
-</div>
-
-</div>
+<h2>Bienvenido a RunPro Store</h2>
+<p>Equipamiento profesional para running.</p>
+<img src="img/banner.jpg" alt="Banner" width="600">
 </section>
+
+<section>
+<h2>Video Promocional</h2>
+<video width="400" controls>
+<source src="video/promo.mp4" type="video/mp4">
+</video>
+</section>
+
+<section>
+<h2>Audio Motivacional</h2>
+<audio controls>
+<source src="audio/motivacion.mp3" type="audio/mpeg">
+</audio>
+</section>
+
+<section>
+<h2>Tu Carrito</h2>
+<ul id="lista-carrito"></ul>
+<p>Total: <strong><span id="total">0</span>€</strong></p>
+<button class="boton" onclick="mostrarCarrito()">Actualizar Carrito</button>
+</section>
+</main>
+
+<footer>
+<p>© 2026 RunPro Store</p>
+</footer>
+
+<script src="js/carrito.js"></script>
+</body>
+</html>
+

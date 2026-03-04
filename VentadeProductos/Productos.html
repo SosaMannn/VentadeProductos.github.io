@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Productos - RunPro Store</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+<h1>Productos</h1>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="contacto.html">Contacto</a>
+<a href="#">🛒 Carrito (<span id="contador">0</span>)</a>
+</nav>
+</header>
+
+<main>
+<section>
+<h2>Nuestros Productos</h2>
+
+<div class="productos-grid">
+
+<div class="producto">
+<img src="img/zapatilla1.jpg" alt="RunPro X1">
+<h3>RunPro X1</h3>
+<p class="precio">120</p>
+<button class="boton" onclick="agregarProducto('RunPro X1', 120)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/zapatilla1.jpg" alt="RunPro Elite">
+<h3>RunPro Elite</h3>
+<p class="precio">150</p>
+<button class="boton" onclick="agregarProducto('RunPro Elite', 150)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/zapatilla1.jpg" alt="RunPro Speed">
+<h3>RunPro Speed</h3>
+<p class="precio">135</p>
+<button class="boton" onclick="agregarProducto('RunPro Speed', 135)">Comprar</button>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer>
+<p>© 2026 RunPro Store</p>
+</footer>
+
+<script src="js/carrito.js"></script>
+</body>
+</html>
